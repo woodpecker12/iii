@@ -1,4 +1,4 @@
-#include "ReportResult.h"
+#include "report/ReportResult.h"
 
 ReportResult::ReportResult(BYTE num) : originNum(num), value(0)
 {

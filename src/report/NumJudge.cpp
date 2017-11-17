@@ -1,4 +1,4 @@
-#include "NumJudge.h"
+#include "report/NumJudge.h"
 #include <string>
 
 NumJudge::NumJudge(BYTE num)

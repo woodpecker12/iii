@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
-#include "TigerStickChicken.h"
-#include "Sprint4Rule.h"
-#include "GameDefine.h"
+#include "game/TigerStickChicken.h"
+#include "num_rule/Sprint4Rule.h"
+#include "report/ReportDefine.h"
 
 struct Sprint4Test : testing::Test
 {

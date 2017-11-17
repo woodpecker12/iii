@@ -1,5 +1,5 @@
-#include "ConvertRule.h"
-#include "GameDefine.h"
+#include "report/ConvertRule.h"
+#include "report/ReportDefine.h"
 
 ConvertRule::ConvertRule(BYTE num) : numJudge(num), result(num)
 {

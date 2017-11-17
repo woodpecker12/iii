@@ -1,4 +1,4 @@
-#include "RockPaperScissors.h"
+#include "game/RockPaperScissors.h"
 
 RockPaperScissors::RockPaperScissors(const NumRule& rule)
 	: rule(&rule)

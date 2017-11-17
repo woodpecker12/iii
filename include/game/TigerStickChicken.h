@@ -1,7 +1,7 @@
 #ifndef INCLUDE_TIGERSTICKCHICKEN_H_
 #define INCLUDE_TIGERSTICKCHICKEN_H_
 
-#include "NumRule.h"
+#include "num_rule/NumRule.h"
 
 struct TigerStickChicken
 {

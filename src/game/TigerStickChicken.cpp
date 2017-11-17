@@ -1,6 +1,6 @@
-#include "TigerStickChicken.h"
-#include "GameDefine.h"
+#include "game/TigerStickChicken.h"
 #include "stdio.h"
+#include "report/ReportDefine.h"
 
 namespace
 {

@@ -2,7 +2,7 @@
 #define INCLUDE_ROCKPAPERSCISSORS_H_
 
 #include "base/BaseTypes.h"
-#include "NumRule.h"
+#include "num_rule/NumRule.h"
 
 struct RockPaperScissors
 {

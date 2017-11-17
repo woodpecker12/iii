@@ -1,5 +1,5 @@
-#include "Sprint3Rule.h"
-#include "ConvertRule.h"
+#include "num_rule/Sprint3Rule.h"
+#include "report/ConvertRule.h"
 
 ReportResult Sprint3Rule::report(BYTE num) const
 {

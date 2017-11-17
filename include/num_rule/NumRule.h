@@ -3,8 +3,8 @@
 
 #include "base/InterfaceDef.h"
 #include "base/Keywords.h"
-#include "ReportResult.h"
 #include "base/BaseTypes.h"
+#include "report/ReportResult.h"
 
 DEFINE_INTERFACE(NumRule)
 {
@@ -13,4 +13,4 @@ DEFINE_INTERFACE(NumRule)
 
 
 
-#endif /* INCLUDE_NUMRULE_H_ */
+#endif

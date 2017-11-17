@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
-#include "RockPaperScissors.h"
-#include "Sprint1Rule.h"
-#include "GameDefine.h"
+#include "game/RockPaperScissors.h"
+#include "num_rule/Sprint1Rule.h"
+#include "report/ReportDefine.h"
 
 struct Sprint1Test : testing::Test
 {
