@@ -16,19 +16,19 @@ TEST_F(RockPaperScissorsTest, should_report_ROCK_when_num_can_div_3)
 	ASSERT_EQ(RockPaperScissors(3).report(), ROCK);
 }
 
-TEST_F(RockPaperScissorsTest, should_report_PAPER_when_num_can_div_5)
+TEST_F(RockPaperScissorsTest, should_report_PAPER_when_num_can_div_7)
 {
-	ASSERT_EQ(RockPaperScissors(5).report(), PAPER);
+	ASSERT_EQ(RockPaperScissors(7).report(), PAPER);
 }
 
-TEST_F(RockPaperScissorsTest, should_report_SCISSORS_when_num_can_div_7)
+TEST_F(RockPaperScissorsTest, should_report_SCISSORS_when_num_can_div_5)
 {
-	ASSERT_EQ(RockPaperScissors(7).report(), SCISSORS);
+	ASSERT_EQ(RockPaperScissors(5).report(), SCISSORS);
 }
 
-TEST_F(RockPaperScissorsTest, should_report_ROCK_and_PAPER_when_num_can_div_3_and_5)
+TEST_F(RockPaperScissorsTest, should_report_ROCK_and_PAPER_when_num_can_div_3_and_7)
 {
-	ASSERT_EQ(RockPaperScissors(15).report(), ROCK | PAPER);
+	ASSERT_EQ(RockPaperScissors(21).report(), ROCK | PAPER);
 }
 
 TEST_F(RockPaperScissorsTest, should_report_SCISSORS_and_PAPER_when_num_can_div_3_and_5)

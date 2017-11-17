@@ -2,7 +2,7 @@
 #include "RockPaperScissors.h"
 
 Scissors::Scissors(BYTE num)
-	: value((num % 7) == 0 ? SCISSORS : 0)
+	: value((num % 5) == 0 ? SCISSORS : 0)
 {
 }
 
