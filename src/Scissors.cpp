@@ -14,4 +14,3 @@ BYTE Scissors::report() const
 {
 	return value;
 }
-

@@ -1,7 +1,8 @@
 #ifndef INCL_BaseTypes_20131017061824_H_
 #define INCL_BaseTypes_20131017061824_H_
 
-typedef unsigned char  BYTE;
+//typedef unsigned char  BYTE;
+typedef unsigned long BYTE;
 typedef char CHAR;
 
 typedef unsigned short WORD;
