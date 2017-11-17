@@ -12,6 +12,4 @@ private:
 
 Sprint3Rule& getSprint3Rule();
 
-
-
 #endif

@@ -1,17 +1,9 @@
 #include "Sprint1Rule.h"
-#include "NumJudge.h"
-#include "GameDefine.h"
+#include "ConvertRule.h"
 
 ReportResult Sprint1Rule::report(BYTE num) const
 {
-	NumJudge numJudge(num);
-	ReportResult result(num);
-
-	if (numJudge.isMultipleOf3()) result.add(ROCK);
-	if (numJudge.isMultipleOf5()) result.add(SCISSORS);
-	if (numJudge.isMultipleOf7()) result.add(PAPER);
-
-	return result;
+	return ConvertRule(num).sprint1Convert();
 }
 
 Sprint1Rule& getSprint1Rule()

@@ -3,7 +3,6 @@
 
 #include "base/BaseTypes.h"
 #include "NumRule.h"
-#include "GameDefine.h"
 
 struct RockPaperScissors
 {

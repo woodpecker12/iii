@@ -1,45 +1,54 @@
 #include "TigerStickChicken.h"
-#include "RockPaperScissors.h"
+#include "GameDefine.h"
 #include "stdio.h"
-#include "Sprint1Rule.h"
 
 namespace
 {
-	void output(BYTE num)
+	void print(WORD32 report)
 	{
-		switch(RockPaperScissors(getSprint1Rule()).report(num))
+		switch(report)
 		{
-		case ROCK:
+		case TIGER:
 			printf("老虎\n");
 			break;
-		case SCISSORS:
+		case STICK:
 			printf("棒子\n");
 			break;
-		case PAPER:
+		case CHICKEN:
 			printf("鸡\n");
 			break;
-		case ROCK | SCISSORS:
+		case TIGER_STICK:
 			printf("老虎 棒子\n");
 			break;
-		case PAPER | SCISSORS:
+		case STICK_CHICKEN:
 			printf("棒子 鸡\n");
 			break;
-		case ROCK | PAPER:
+		case TIGER_CHICKEN:
 			printf("老虎 鸡\n");
 			break;
-		case ROCK | SCISSORS | PAPER:
+		case TIGER_STICK_CHICKEN:
 			printf("老虎 棒子 鸡\n");
 			break;
 		default:
-			printf("%d\n", num);
+			printf("%d\n", report);
 		}
 	}
 }
 
-void TigerStickChicken::run()
+TigerStickChicken::TigerStickChicken(const NumRule& rule)
+	: rule(&rule)
+{
+}
+
+WORD32 TigerStickChicken::report(BYTE num) const
+{
+	return rule->report(num).getValue();
+}
+
+void TigerStickChicken::runGame()
 {
 	for (BYTE num = 1; num <= 120; num++)
 	{
-		output(num);
+		print(report(num));
 	}
 }
