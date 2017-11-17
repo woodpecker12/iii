@@ -1,5 +1,6 @@
 #include "ScissorsNew.h"
 #include "RockPaperScissors.h"
+#include "GameDefine.h"
 
 ScissorsNew::ScissorsNew(BYTE num) : value(calcValue(num))
 {

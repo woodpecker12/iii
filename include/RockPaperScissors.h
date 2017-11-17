@@ -2,23 +2,17 @@
 #define INCLUDE_ROCKPAPERSCISSORS_H_
 
 #include "base/BaseTypes.h"
+#include "NumRule.h"
 #include "GameDefine.h"
-#include "Rock.h"
-#include "Paper.h"
-#include "Scissors.h"
-#include "NumJudge.h"
 
 struct RockPaperScissors
 {
-	RockPaperScissors(BYTE num);
+	RockPaperScissors(const NumRule& rule);
 
-	WORD32 report() const;
-
-private:
-	WORD32 judgeNum() const;
+	WORD32 report(BYTE num) const;
 
 private:
-	BYTE num;
+	const NumRule* rule;
 };
 
 #endif

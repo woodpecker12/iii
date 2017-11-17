@@ -1,12 +1,13 @@
 #include "TigerStickChicken.h"
 #include "RockPaperScissors.h"
 #include "stdio.h"
+#include "Sprint1Rule.h"
 
 namespace
 {
 	void output(BYTE num)
 	{
-		switch(RockPaperScissors(num).report())
+		switch(RockPaperScissors(getSprint1Rule()).report(num))
 		{
 		case ROCK:
 			printf("老虎\n");
