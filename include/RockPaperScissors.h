@@ -6,18 +6,19 @@
 #include "Rock.h"
 #include "Paper.h"
 #include "Scissors.h"
+#include "NumJudge.h"
 
 struct RockPaperScissors
 {
 	RockPaperScissors(BYTE num);
 
-	BYTE report() const;
+	WORD32 report() const;
+
+private:
+	WORD32 judgeNum() const;
 
 private:
 	BYTE num;
-	Rock rock;
-	Paper paper;
-	Scissors scissors;
 };
 
 #endif

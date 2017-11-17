@@ -1,14 +1,24 @@
 #include "RockPaperScissors.h"
 
-RockPaperScissors::RockPaperScissors(BYTE num)
-	: num(num), rock(num), paper(num), scissors(num)
+RockPaperScissors::RockPaperScissors(BYTE num) : num(num)
 {
 }
 
-BYTE RockPaperScissors::report() const
+WORD32 RockPaperScissors::judgeNum() const
 {
-	if (rock.report() == SPECIAL_ROCK) return ROCK;
+	NumJudge numJudge(num);
+	if (numJudge.isContain3()) return ROCK;
 
-	BYTE result = rock.report() | paper.report() | scissors.report();
-	return result == 0 ? num : result;
+	WORD32 judgeResult = 0;
+
+	if (numJudge.isMultipleOf3()) judgeResult |= ROCK;
+	if (numJudge.isMultipleOf5()) judgeResult |= SCISSORS;
+	if (numJudge.isMultipleOf7()) judgeResult |= PAPER;
+
+	return judgeResult == 0 ? num : judgeResult;
+}
+
+WORD32 RockPaperScissors::report() const
+{
+	return judgeNum();
 }
