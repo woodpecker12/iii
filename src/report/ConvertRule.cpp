@@ -42,9 +42,5 @@ ReportResult ConvertRule::sprint3Convert()
 
 ReportResult ConvertRule::sprint4Convert()
 {
-	if (numJudge.isMultipleOf3()) result.add(TIGER);
-	if (numJudge.isMultipleOf5()) result.add(STICK);
-	if (numJudge.isMultipleOf7()) result.add(CHICKEN);
-
-	return result;
+	return sprint2Convert().convertTigerStickChicken();
 }

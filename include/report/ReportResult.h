@@ -9,11 +9,11 @@ struct ReportResult
 
 	void add(WORD32 report);
 	WORD32 getValue() const;
+	ReportResult convertTigerStickChicken();
 
 private:
 	BYTE originNum;
 	WORD32 value;
 };
-
 
 #endif
