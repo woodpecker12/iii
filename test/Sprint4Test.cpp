@@ -45,12 +45,27 @@ TEST_F(Sprint4Test, should_report_SCISSORS_and_ROCK_when_num_can_div_3_and_5)
 
 TEST_F(Sprint4Test, should_report_SCISSORS_and_PAPER_when_num_can_div_5_and_7)
 {
-	ASSERT_EQ(tigerStickChicken.report(35), STICK_CHICKEN);
+	ASSERT_EQ(tigerStickChicken.report(70), STICK_CHICKEN);
 }
 
 TEST_F(Sprint4Test, should_report_ROCK_SCISSORS_and_PAPER_when_num_can_div_3_and_5_7)
 {
 	ASSERT_EQ(tigerStickChicken.report(105), TIGER_STICK_CHICKEN);
+}
+
+TEST_F(Sprint4Test, should_report_ROCK_when_num_include_string_3)
+{
+	ASSERT_EQ(tigerStickChicken.report(3), TIGER);
+}
+
+TEST_F(Sprint4Test, should_report_ROCK_when_num_include_string_3_and_can_div_3_and_5)
+{
+	ASSERT_EQ(tigerStickChicken.report(35), TIGER);
+}
+
+TEST_F(Sprint4Test, should_report_ROCK_when_num_include_string_3_and_can_div_3_and_7)
+{
+	ASSERT_EQ(tigerStickChicken.report(63), TIGER);
 }
 
 TEST_F(Sprint4Test, print_1_to_120_num_result_when_use_tiger_stick_chicken)

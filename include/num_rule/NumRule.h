@@ -11,6 +11,4 @@ DEFINE_INTERFACE(NumRule)
 	ABSTRACT(ReportResult report(BYTE num) const);
 };
 
-
-
 #endif
