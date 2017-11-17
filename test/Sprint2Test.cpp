@@ -1,11 +1,11 @@
 #include "gtest/gtest.h"
 #include "RockPaperScissors.h"
-#include "Sprint1Rule.h"
+#include "Sprint2Rule.h"
 #include "GameDefine.h"
 
 struct Sprint2Test : testing::Test
 {
-	Sprint2Test() : rockPaperScissors(getSprint1Rule())
+	Sprint2Test() : rockPaperScissors(getSprint2Rule())
 	{
 	}
 
