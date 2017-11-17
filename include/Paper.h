@@ -10,6 +10,9 @@ struct Paper
 	BYTE report() const;
 
 private:
+	BYTE calcValue(BYTE num);
+
+private:
 	BYTE value;
 };
 

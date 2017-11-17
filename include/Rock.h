@@ -10,6 +10,9 @@ struct Rock
 	BYTE report() const;
 
 private:
+	BYTE calcValue(BYTE num);
+
+private:
 	BYTE value;
 };
 

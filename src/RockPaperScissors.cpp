@@ -7,9 +7,8 @@ RockPaperScissors::RockPaperScissors(BYTE num)
 
 BYTE RockPaperScissors::report() const
 {
-	BYTE result = 0;
+	if (rock.report() == SPECIAL_ROCK) return ROCK;
 
-	result = rock.report() | paper.report() | scissors.report();
-
+	BYTE result = rock.report() | paper.report() | scissors.report();
 	return result == 0 ? num : result;
 }
